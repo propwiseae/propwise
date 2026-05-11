@@ -9,4 +9,4 @@ export type Profile = {
   stripe_subscription_id: string | null
   subscription_status: string | null
   created_at: string
-} 
+}
