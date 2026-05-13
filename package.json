@@ -9,11 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@stripe/stripe-js": "^9.4.0",
-    "next": "^16.2.6",
+    "@hookform/resolvers": "^5.2.2",
+    "@stripe/stripe-js": "^9.5.0",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.105.4",
+    "next": "^9.3.3",
+    "posthog-js": "^1.373.4",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "stripe": "^22.1.1"
+    "react-hook-form": "^7.75.0",
+    "stripe": "^22.1.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
