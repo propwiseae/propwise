@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Import Rent — April 2026",
+      "type": "shell",
+      "command": "py",
+      "args": ["scripts/import_du_rent.py", "--file", "data/rents-2026-04.csv", "--period", "2026-04"],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" }
+    },
+    {
+      "label": "Import DLD Rent Data",
+      "type": "shell",
+      "command": "py",
+      "args": ["scripts/import_du_rent.py", "--file", "${input:csvFile}", "--period", "${input:period}"],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "csvFile",
+      "description": "Path to CSV or Excel file",
+      "default": "data/rents-2026-04.csv",
+      "type": "promptString"
+    },
+    {
+      "id": "period",
+      "description": "Data period (e.g. 2026-05)",
+      "default": "2026-04",
+      "type": "promptString"
+    }
+  ]
+}
